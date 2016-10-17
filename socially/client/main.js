@@ -1,8 +1,10 @@
 import angular from 'angular';
 import angularMeteor from 'angular-meteor';
+import uiRouter from 'angular-ui-router';
 
 angular.module('socially', [
-    angularMeteor
+    angularMeteor,
+    uiRouter
 ])
     .controller('PartiesListCtrl', ['$scope', function($scope) {
         $scope.parties = [{
